@@ -7,6 +7,36 @@
   <title>Text RPG</title>
 </head>
 <body>
-  
+  <form id="start-screen">
+    <input id="name-input" placeholder="주인공 이름을 입력하세요!" />
+    <button id="start">시작</button>
+  </form>
+  <div id="screen" style="display: none;">
+    <div id="hero-stat">
+      <span id="hero-name"></span>
+      <span id="hero-level"></span>
+      <span id="hero-hp"></span>
+      <span id="hero-xp"></span>
+      <span id="hero-att"></span>
+    </div>
+    <div id="message"></div>
+    <div id="game-menu">
+      <button id="menu-1">모험</button>
+      <button id="menu-2">휴식</button>
+      <button id="menu-3">종료</button>
+    </div>
+    <div id="battle-menu" style="display: none;">
+      <button id="battle-1">공격</button>
+      <button id="battle-2">휴식</button>
+      <button id="battle-3">도망</button>
+    </div>
+    <div id="monster-stat" style="display: none;">
+      <span id="monster-name"></span>
+      <span id="monster-hp"></span>
+      <span id="monster-att"></span>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
 </body>
 </html>
